@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lista Coches
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Lista de coches</h1>
+
+  <ion-content >
+  <ion-list no-lines>
+    <button ion-item *ngFor="let coche of coches | async" (click)="eliminarCoche(coche)">
+    <p>{{ coche.marca }} </p>
+    <p>{{ coche.modelo }}  </p>
+    <p>{{coche.color}}  </p>
+   <p> {{coche.matricula}}  </p>
+  </button> 
+    
+  </ion-list>
+</ion-content>
+</ion-content>

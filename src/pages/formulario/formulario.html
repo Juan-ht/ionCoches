@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Formulario
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" >Introduce la marca:</ion-label>
+      <ion-input placeholder="" [(ngModel)]="marca"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary"  >Introduce el modelo:</ion-label>
+      <ion-input placeholder="" [(ngModel)]="modelo" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" >Introduce el color:</ion-label>
+      <ion-input placeholder="" [(ngModel)]="color" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Introduce el matricula:</ion-label>
+      <ion-input placeholder="" [(ngModel)]="matricula" ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="danger"  (click)="nuevoCoche()" (click)="showToast('bottom')">Añadir coche</button>
+
+</ion-content>
